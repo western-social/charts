@@ -32,6 +32,9 @@ mastodon:
   # web_domain: mastodon.example.com
   # If set to true, the frontpage of your Mastodon server will always redirect to the first profile in the database and registrations will be disabled.
   singleUserMode: false
+  # if your mastodon is behind a proxy you should put it's IP address here
+  # https://docs.joinmastodon.org/admin/config/#trusted_proxy_ip
+  trusted_proxy_ip: ""
   persistence:
     assets:
       # ReadWriteOnce is more widely supported than ReadWriteMany, but limits
